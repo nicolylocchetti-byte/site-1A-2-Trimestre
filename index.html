@@ -15,11 +15,8 @@
             margin: 0 auto;
             border: 5px solid rgb(161, 248, 233);
             padding: 16px;
-
         }
-
         main {
-
             background-color: #03ffff;
             color: rgb(180, 62, 23);
             text-align: center;
@@ -27,14 +24,19 @@
             margin: 0 auto;
             border: 5px solid rgba(96, 248, 235, 0.992);
             padding: 16px;
-
-
+        }
+        article{ 
+            display:flex;
         }
 
         img {
             width: 450px;
             height: 290px;
+text-align: center;
+        }
 
+        .artigo-autor{  
+            font-weight: bold;
         }
     </style>
 
@@ -45,32 +47,39 @@
         <h1>Seja muito bem vindo ao site de espotes equinos especializado em 3 Tambores </h1>
         <p>Venha conhecer mais sobre os cavalos e eles sendo atletas</p>
     </header>
-
     <main>
         <article>
-        <img src="imagem-blog.png"
-            alt="Fotografia de ação em uma competição de Três Tambores. Uma tamborzeira de cabelos pretos longos ao vento, usando boné jeans e camisa azul-claro, contorna um tambor vermelho e azul montando um cavalo Quarto de Milha baio claro com crina e cauda pretas, levantando poeira na arena.">
+        <img src="imagem-blog.png"  alt="ma competição de Três Tambores. Uma Fotografia de ação em utamborzeira de cabelos pretos longos ao vento, usando boné jeans e camisa azul-claro, contorna um tambor vermelho e azul montando um cavalo Quarto de Milha baio claro com crina e cauda pretas, levantando poeira na arena.">
+        <div>
         <h2>Meu primeiro treino</h2>
         <p>sejam bem vindos ao meu site irei ensinar a dar uma boa passada nos tambores e insinar
             de maneira tecnica como funciona esse mundo </p>
         <p>por:Nicoly Sperduti Locchetti</p>
+
+
         <button>🐎<span>0</span></button>
         <button>🐄​<span>0</span></button>  
         <article>
-
+        <div>
         <img src="imagem-blog.png"
             alt="Fotografia de ação em uma competição de Três Tambores. Uma tamborzeira de cabelos pretos longos ao vento, usando boné jeans e camisa azul-claro, contorna um tambor vermelho e azul montando um cavalo Quarto de Milha baio claro com crina e cauda pretas, levantando poeira na arena.">
         <h2>Meu primeiro treino</h2>
         <p>sejam bem vindos ao meu site irei ensinar a dar uma boa passada nos tambores e insinar
             de maneira tecnica como funciona esse mundo </p>
         <p>por:Nicoly Sperduti Locchetti</p>
+
+
         <button>🐎<span>0</span></button>
         <button>🐄​<span>0</span></button>
+        <div>
         <article>
     </main>
+
+
 </body>
 <script>
     const botoes = document.querySelectorAll("button");
+
     botoes.forEach(function (botao) {
         botao.addEventListener("click",botaoClicado);
         function botaoClicado() {
@@ -78,7 +87,7 @@
             let texto = botao.querySelector("span");
             texto.textContent++;
         }
+        botao.addEventListener("click", botaoClicado);
     });
-
     </script>
 </html >
